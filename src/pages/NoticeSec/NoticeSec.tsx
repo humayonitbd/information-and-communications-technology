@@ -47,7 +47,7 @@ const NoticeSec = () => {
    };
   return (
     <div className="py-10">
-      <section className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#213D61]">
+      <section className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#00a751f3]">
         <h2 className="text-2xl font-semibold text-[#213D61] mb-6 border-b pb-2 border-gray-300">
           নোটিশ বোর্ড
         </h2>
@@ -57,10 +57,10 @@ const NoticeSec = () => {
               {noticeInfos.map((notice) => (
                 <div
                   key={notice.id}
-                  className="flex justify-between items-center space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300 border-l-4 border-[#213D61]"
+                  className="flex justify-between items-center space-x-4 p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition duration-300 border-l-4 border-[#00a751f3]"
                 >
                   <li className="flex items-center ">
-                    <FaAngleRight className="text-[#213D61] text-lg" />
+                    <FaAngleRight className="text-[#00a751f3] text-lg" />
                     <span className="text-gray-700">
                       {notice.details.slice(0, 80)}...
                     </span>
@@ -88,7 +88,15 @@ const NoticeSec = () => {
               <div className="mt-4">
                 <h4 className="font-semibold text-lg">জনাব মোঃ নাহিদ ইসলাম</h4>
                 <p className="text-gray-600">মাননীয় উপদেষ্টা</p>
-                <button className="underline">See more</button>
+                <a
+                  href="https://en.wikipedia.org/wiki/Nahid_Islam"
+                  target="_blank"
+                >
+                  {" "}
+                  <button className="bg-[#00a751f3] text-slate-100  py-1 px-2 rounded ">
+                    See more
+                  </button>
+                </a>
               </div>
             </div>
           </div>

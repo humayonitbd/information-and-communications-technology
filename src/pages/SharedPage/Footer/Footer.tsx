@@ -2,7 +2,7 @@ import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#213D61] text-slate-50 py-8 w-full md:w-11/12 mx-auto px-4">
+    <footer className="bg-[#162B45] text-slate-50 py-8 w-full md:w-11/12 mx-auto px-4">
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
         {/* About Section */}
         <div className="mb-6 md:mb-0 w-full md:w-2/4 md:pr-5">
@@ -25,26 +25,42 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <div className="mb-6 md:mb-0 w-full md:w-1/4">
-          <h3 className="text-xl font-semibold mb-4">দ্রুত লিঙ্ক</h3>
+          <h3 className="text-xl font-semibold mb-4">অন্যান্য লিঙ্ক</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#home" className="hover:underline">
-                হোম
+              <a
+                href="https://cabinet.gov.bd/"
+                target="_blank"
+                className="hover:underline"
+              >
+                মন্ত্রিপরিষদ বিভাগ
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:underline">
-                সম্পর্কে
+              <a
+                href="https://a2i.gov.bd/"
+                target="_blank"
+                className="hover:underline"
+              >
+                এটুআই
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:underline">
-                সেবা
+              <a
+                href="https://www.bcc.gov.bd/"
+                target="_blank"
+                className="hover:underline"
+              >
+                বিসিসি
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:underline">
-                যোগাযোগ
+              <a
+                href="https://doict.gov.bd/"
+                target="_blank"
+                className="hover:underline"
+              >
+                ডিওআইসিটি ও বেসিস
               </a>
             </li>
           </ul>
