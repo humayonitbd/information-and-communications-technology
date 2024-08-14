@@ -87,7 +87,7 @@ const Footer = () => {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-50 hover:text-blue-600"
+              className="text-slate-50 hover:text-[#00a751f3]"
             >
               <FaFacebook />
             </a>
@@ -95,7 +95,7 @@ const Footer = () => {
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-50 hover:text-blue-400"
+              className="text-slate-50 hover:text-[#00a751f3]"
             >
               <FaTwitter />
             </a>
@@ -103,7 +103,7 @@ const Footer = () => {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-50 hover:text-pink-600"
+              className="text-slate-50 hover:text-[#00a751f3]"
             >
               <FaInstagram />
             </a>
@@ -111,7 +111,7 @@ const Footer = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-slate-50 hover:text-blue-700"
+              className="text-slate-50 hover:text-[#00a751f3]"
             >
               <FaLinkedin />
             </a>

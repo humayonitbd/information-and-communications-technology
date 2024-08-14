@@ -69,7 +69,7 @@ const NoticeSec = () => {
                   <li className="flex items-center ">
                     <FaAngleRight className="text-[#00a751f3] text-lg" />
                     <span className="text-gray-700">
-                      {notice.details.slice(0, 80)}...
+                      {notice.details.slice(0, 90)}...
                     </span>
                   </li>
                   <button

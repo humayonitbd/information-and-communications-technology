@@ -1,10 +1,55 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../../assets/logo/logo.png";
+import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+
 
 const Navbar = () => {
+
   return (
-    <div>
-      <div className="navbar w-11/12 mx-auto border-b-2 bg-[#213D61] text-slate-50">
+    <div className="w-11/12 mx-auto">
+      <div className="bg-[#298f5a] flex justify-between items-center p-2">
+        <div className="text-slate-100 text-xs">
+          বাংলাদেশ জাতীয় তথ্য বাতায়ন
+        </div>
+        <div className="text-slate-100">
+          {" "}
+          <div className="flex justify-center md:justify-start space-x-4">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-50 hover:text-[#fff]"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-50 hover:text-[#fff]"
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-50 hover:text-[#fff]"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-50 hover:text-[#fff]"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="navbar  border-b-2 bg-[#213D61] text-slate-50">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -368,11 +413,11 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className="indicator">
-            <NavLink to="">
+            {/* <NavLink to="">
               <button className="text-base btn bg-[#00a751f3] hover:bg-[#00a751b0] border-none text-slate-100">
                 Login
               </button>
-            </NavLink>
+            </NavLink> */}
           </div>
         </div>
       </div>
