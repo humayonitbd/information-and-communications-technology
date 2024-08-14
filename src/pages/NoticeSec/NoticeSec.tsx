@@ -48,7 +48,7 @@ const NoticeSec = () => {
   return (
     <div className="py-10">
       <section className="bg-white p-8 rounded-lg shadow-md border-t-4 border-[#213D61]">
-        <h2 className="text-2xl font-semibold text-gray-800 mb-6 border-b pb-2 border-gray-300">
+        <h2 className="text-2xl font-semibold text-[#213D61] mb-6 border-b pb-2 border-gray-300">
           নোটিশ বোর্ড
         </h2>
         <div className="md:flex justify-start gap-10">
@@ -83,7 +83,7 @@ const NoticeSec = () => {
           <div className="flex items-start h-full ">
             <div className="text-center ml-20">
               <div>
-                <img className="h-72" src={noticeImage} alt="" />
+                <img className="h-64" src={noticeImage} alt="" />
               </div>
               <div className="mt-4">
                 <h4 className="font-semibold text-lg">জনাব মোঃ নাহিদ ইসলাম</h4>

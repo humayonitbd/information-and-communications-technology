@@ -1,5 +1,11 @@
 
-const NoticeModal = ({ noticeDetails }: { noticeDetails :{details:string, title:string}}) => {
+export type TNoticDetails = {
+  details: string;
+  title: string;
+};
+
+
+const NoticeModal = ({ noticeDetails }: { noticeDetails: TNoticDetails }) => {
   return (
     <div>
       <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
