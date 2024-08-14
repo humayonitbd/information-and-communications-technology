@@ -2,7 +2,6 @@ import bannarImg from "../../../assets/bannar image/banner.png";
 
 const BannerSec = () => {
     return (
-     
       <div className="relative w-full h-96 overflow-hidden">
         <img
           src={bannarImg}
@@ -16,9 +15,11 @@ const BannerSec = () => {
           <p className="text-lg md:text-xl mb-6">
             আমাদের আধুনিক প্রযুক্তি ও পরিষেবার সাথে আপনার ভবিষ্যতকে উন্নত করুন।
           </p>
-          <button className="px-6 py-3 text-white bg-[#00a751f3] rounded-lg hover:bg-[#3c7e5cf3]">
-            আরও জানুন
-          </button>
+          <a href="#serviceSection">
+            <button className="px-6 py-3 text-white bg-[#00a751f3] rounded-lg hover:bg-[#3c7e5cf3]">
+              আরও জানুন
+            </button>
+          </a>{" "}
         </div>
       </div>
     );

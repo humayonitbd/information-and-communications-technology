@@ -1,10 +1,14 @@
 import { FaAngleRight } from "react-icons/fa";
 import noticeImage from "../../assets/notice image/Honorable Adviser (1).jpg";
-import NoticeModal from "../../components/ui/NoticeModal";
+import NoticeModal, { TNoticDetails } from "../../components/ui/NoticeModal";
 import {useState} from 'react'
 
+
+
 const NoticeSec = () => {
-    const [noticeDel, setNoticeDel] = useState();
+   const [noticeDel, setNoticeDel] = useState<TNoticDetails | undefined>(
+     undefined
+   );
 
   const noticeInfos = [
     {
@@ -41,9 +45,12 @@ const NoticeSec = () => {
     },
   ];
 
-   const handleSeeMore = (notice:any) => {
+   const handleSeeMore = (notice: TNoticDetails) => {
      setNoticeDel(notice);
-     document.getElementById("my_modal_5").showModal();
+     const modal = document.getElementById("my_modal_5") as HTMLDialogElement;
+     if (modal) {
+       modal.showModal(); 
+     }
    };
   return (
     <div className="py-10">
@@ -66,13 +73,8 @@ const NoticeSec = () => {
                     </span>
                   </li>
                   <button
-                    className="underline"
-                    onClick={() =>
-                      handleSeeMore({
-                        details: notice?.details,
-                        title: notice?.title,
-                      })
-                    }
+                    className="underline text-[#00a751f3] "
+                    onClick={() => handleSeeMore(notice)}
                   >
                     see more
                   </button>
@@ -83,7 +85,7 @@ const NoticeSec = () => {
           <div className="flex items-start h-full ">
             <div className="text-center ml-20">
               <div>
-                <img className="h-64" src={noticeImage} alt="" />
+                <img className="h-56 w-56" src={noticeImage} alt="" />
               </div>
               <div className="mt-4">
                 <h4 className="font-semibold text-lg">জনাব মোঃ নাহিদ ইসলাম</h4>
@@ -92,7 +94,6 @@ const NoticeSec = () => {
                   href="https://en.wikipedia.org/wiki/Nahid_Islam"
                   target="_blank"
                 >
-                  {" "}
                   <button className="bg-[#00a751f3] text-slate-100  py-1 px-2 rounded ">
                     See more
                   </button>
