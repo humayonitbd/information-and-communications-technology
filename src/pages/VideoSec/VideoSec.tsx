@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import { FaPlay } from "react-icons/fa"; // Import the play icon from react-icons
-
+import { TiDelete } from "react-icons/ti";
 const VideoSec = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [videoSrc, setVideoSrc] = useState("");
@@ -74,7 +74,7 @@ const VideoSec = () => {
         isOpen={isOpen}
         onRequestClose={closeModal}
         contentLabel="Video Modal"
-        className="bg-black bg-opacity-90 w-10/12 h-3/4 mx-auto my-20 p-4 relative"
+        className="bg-black bg-opacity-90 w-8/12 h-3/4 mx-auto mb-20 mt-32  p-4 relative"
       >
         <iframe
           className="w-full h-full"
@@ -82,11 +82,8 @@ const VideoSec = () => {
           title="Video"
           allowFullScreen
         />
-        <button
-          onClick={closeModal}
-          className="absolute top-2 right-2 bg-white text-black px-4 py-2 rounded-full"
-        >
-          Close
+        <button onClick={closeModal} className="absolute top-2 right-2">
+          <TiDelete className="bg-red-500 text-slate-100 rounded-full  text-4xl" />
         </button>
       </Modal>
     </div>
