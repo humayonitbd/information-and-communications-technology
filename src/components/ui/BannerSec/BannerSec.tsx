@@ -1,10 +1,26 @@
-import bannarImg from "../../../assets/bannar image/banner.png";
+import { useState, useEffect } from "react";
+import bannarImg1 from "../../../assets/bannar image/banner.png";
+import bannarImg2 from "../../../assets/bannar image/Banner-1.jpg";
 
+
+const images = [bannarImg1, bannarImg2];
 const BannerSec = () => {
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 3000); 
+
+    return () => clearInterval(interval); // Clean up the interval on component unmount
+  }, []);
+
+
     return (
       <div className="relative w-full h-96 overflow-hidden">
         <img
-          src={bannarImg}
+          src={images[currentImage]}
           alt="Banner"
           className="w-full h-full object-cover"
         />

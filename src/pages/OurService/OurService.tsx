@@ -153,7 +153,11 @@ const OurService = () => {
       },
     ];
     return (
-      <div id="serviceSection" className="py-10 bg-gradient-to-r from-blue-50 to-gray-100">
+      <div
+        id="serviceSection"
+        data-aos="fade-up"
+        className="py-10 bg-gradient-to-r from-blue-50 to-gray-100"
+      >
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             {services?.map((service) => (
@@ -168,7 +172,10 @@ const OurService = () => {
                 <ul className="list-disc list-inside text-gray-700 space-y-3">
                   {service.details?.map((detail) => (
                     <NavLink to={`/${detail.title}`}>
-                      <li key={detail.title} className="flex items-center hover:underline">
+                      <li
+                        key={detail.title}
+                        className="flex items-center hover:underline"
+                      >
                         <FaAngleRight className="text-[#00a751f3] text-xl mr-3" />
                         {detail.title}
                       </li>

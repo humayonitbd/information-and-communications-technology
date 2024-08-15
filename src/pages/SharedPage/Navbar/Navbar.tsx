@@ -6,7 +6,7 @@ import { FaInstagram, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 const Navbar = () => {
 
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto sticky top-0 z-50">
       <div className="bg-[#298f5a] flex justify-between items-center p-2">
         <div className="text-slate-100 text-xs">
           বাংলাদেশ জাতীয় তথ্য বাতায়ন
@@ -81,22 +81,22 @@ const Navbar = () => {
                     <div className="ml-1">
                       <p className="text-sm font-semibold">বিভাগ পরিচিতি</p>
 
-                      <NavLink to={`/page/ইতিহাস`}>
+                      <NavLink to={`/লিংক-পেজ/ইতিহাস`}>
                         <li className=" border-b-2 p-2">ইতিহাস</li>
                       </NavLink>
-                      <NavLink to={`/page/মাননীয় উপদেষ্টা`}>
+                      <NavLink to={`/লিংক-পেজ/মাননীয় উপদেষ্টা`}>
                         <li className=" border-b-2 p-2">মাননীয় উপদেষ্টা</li>
                       </NavLink>
-                      <NavLink to={`/page/প্রধান কার্যাবলী`}>
+                      <NavLink to={`/লিংক-পেজ/প্রধান কার্যাবলী`}>
                         <li className=" border-b-2 p-2"> প্রধান কার্যাবলী</li>
                       </NavLink>
                     </div>
                     <div>
                       <p className="text-sm font-semibold">জনবল</p>
-                      <NavLink to={`/page/কর্মকর্তাবৃন্দ`}>
+                      <NavLink to={`/লিংক-পেজ/কর্মকর্তাবৃন্দ`}>
                         <li className=" border-b-2 p-2"> কর্মকর্তাবৃন্দ</li>
                       </NavLink>
-                      <NavLink to={`/page/কর্মবণ্টন`}>
+                      <NavLink to={`/লিংক-পেজ/কর্মবণ্টন`}>
                         <li className=" border-b-2 p-2"> কর্মবণ্টন</li>
                       </NavLink>
                     </div>
@@ -108,7 +108,7 @@ const Navbar = () => {
                   অধীনস্থ দপ্তর
                 </span>
                 <ul className="bg-base-100 z-20 text-[#213D61] border rounded  p-2 absolute left-0 mt-8 hidden group-hover:block">
-                  <NavLink to={`/page/দপ্তর-অফিস-সংস্থার-তালিকা`}>
+                  <NavLink to={`/লিংক-পেজ/দপ্তর-অফিস-সংস্থার-তালিকা`}>
                     <li className=" border-b-2 p-2">
                       দপ্তর/অফিস/সংস্থার তালিকা
                     </li>
@@ -126,19 +126,19 @@ const Navbar = () => {
                         উন্নয়ন প্রকল্পসমূহ
                       </p>
 
-                      <NavLink to={`/page/চলমান প্রকল্প`}>
+                      <NavLink to={`/লিংক-পেজ/চলমান প্রকল্প`}>
                         <li className=" border-b-2 p-2">চলমান প্রকল্প</li>
                       </NavLink>
-                      <NavLink to={`/page/ক্রয় পরিকল্পনা`}>
+                      <NavLink to={`/লিংক-পেজ/ক্রয় পরিকল্পনা`}>
                         <li className=" border-b-2 p-2">ক্রয় পরিকল্পনা</li>
                       </NavLink>
-                      <NavLink to={`/page/সমাপ্ত প্রকল্পসমূহ`}>
+                      <NavLink to={`/লিংক-পেজ/সমাপ্ত প্রকল্পসমূহ`}>
                         <li className=" border-b-2 p-2"> সমাপ্ত প্রকল্পসমূহ</li>
                       </NavLink>
                     </div>
                     <div>
                       <p className="text-sm font-semibold">কর্মসূচিসমূহ</p>
-                      <NavLink to={`/page/সমাপ্ত কর্মসূচিসমূহ`}>
+                      <NavLink to={`/লিংক-পেজ/সমাপ্ত কর্মসূচিসমূহ`}>
                         <li className=" border-b-2 p-2">
                           {" "}
                           সমাপ্ত কর্মসূচিসমূহ
@@ -151,10 +151,10 @@ const Navbar = () => {
               <li className="mr-1 relative group">
                 <span className="text-center cursor-pointer">গ্যালারি</span>
                 <ul className="bg-base-100 z-20 text-[#213D61] border rounded  p-2 absolute left-0 mt-8 hidden group-hover:block">
-                  <NavLink to={`/page/ফটো গ্যালারি`}>
+                  <NavLink to={`/লিংক-পেজ/ফটো গ্যালারি`}>
                     <li className=" border-b-2 p-2"> ফটো গ্যালারি </li>
                   </NavLink>
-                  <NavLink to={`/page/ভিডিও গ্যালারি`}>
+                  <NavLink to={`/লিংক-পেজ/ভিডিও গ্যালারি`}>
                     <li className=" border-b-2 p-2">ভিডিও গ্যালারি</li>
                   </NavLink>
                 </ul>
@@ -162,16 +162,16 @@ const Navbar = () => {
               <li className="mr-1 relative group">
                 <span className="text-center cursor-pointer">আইন নীতিমালা</span>
                 <ul className="bg-base-100 z-20 text-[#213D61] border rounded  p-2 absolute left-0 mt-8 hidden group-hover:block">
-                  <NavLink to={`/page/আইন ও বিধি`}>
+                  <NavLink to={`/লিংক-পেজ/আইন ও বিধি`}>
                     <li className=" border-b-2 p-2">আইন ও বিধি</li>
                   </NavLink>
-                  <NavLink to={`/page/নীতিমালা`}>
+                  <NavLink to={`/লিংক-পেজ/নীতিমালা`}>
                     <li className=" border-b-2 p-2">নীতিমালা</li>
                   </NavLink>
-                  <NavLink to={`/page/নির্দেশিকা ও কৌশলপত্র`}>
+                  <NavLink to={`/লিংক-পেজ/নির্দেশিকা ও কৌশলপত্র`}>
                     <li className=" border-b-2 p-2">নির্দেশিকা ও কৌশলপত্র</li>
                   </NavLink>
-                  <NavLink to={`/page/খসড়া আইন-বিধি এবং নীতিমালা`}>
+                  <NavLink to={`/লিংক-পেজ/খসড়া আইন-বিধি এবং নীতিমালা`}>
                     <li className=" border-b-2 p-2">
                       খসড়া আইন, বিধি এবং নীতিমালা
                     </li>
@@ -181,33 +181,33 @@ const Navbar = () => {
               <li className="mr-1 relative group">
                 <span className="text-center cursor-pointer"> ই-সেবা</span>
                 <ul className="bg-base-100 z-20 text-[#213D61] border rounded  p-2 absolute left-0 mt-8 hidden group-hover:block">
-                  <NavLink to={`/page/ইনোভেশন ইনফরমেশন`}>
+                  <NavLink to={`/লিংক-পেজ/ইনোভেশন ইনফরমেশন`}>
                     <li className=" border-b-2 p-2">ইনোভেশন ইনফরমেশন</li>
                   </NavLink>
-                  <NavLink to={`/page/নৈমিত্তিক ছুটি ব্যবস্থাপনা`}>
+                  <NavLink to={`/লিংক-পেজ/নৈমিত্তিক ছুটি ব্যবস্থাপনা`}>
                     <li className=" border-b-2 p-2">
                       নৈমিত্তিক ছুটি ব্যবস্থাপনা
                     </li>
                   </NavLink>
-                  <NavLink to={`/page/স্মার্ট ড্যাশবোর্ড`}>
+                  <NavLink to={`/লিংক-পেজ/স্মার্ট ড্যাশবোর্ড`}>
                     <li className=" border-b-2 p-2">স্মার্ট ড্যাশবোর্ড</li>
                   </NavLink>
-                  <NavLink to={`/page/ফ্রিল্যান্সার আইডি`}>
+                  <NavLink to={`/লিংক-পেজ/ফ্রিল্যান্সার আইডি`}>
                     <li className=" border-b-2 p-2">ফ্রিল্যান্সার আইডি</li>
                   </NavLink>
-                  <NavLink to={`/page/ফেলোশিপ ও বৃত্তি`}>
+                  <NavLink to={`/লিংক-পেজ/ফেলোশিপ ও বৃত্তি`}>
                     <li className=" border-b-2 p-2">ফেলোশিপ ও বৃত্তি</li>
                   </NavLink>
-                  <NavLink to={`/page/ই-নথি`}>
+                  <NavLink to={`/লিংক-পেজ/ই-নথি`}>
                     <li className=" border-b-2 p-2">ই-নথি</li>
                   </NavLink>
-                  <NavLink to={`/page/ওয়েব মেইল`}>
+                  <NavLink to={`/লিংক-পেজ/ওয়েব মেইল`}>
                     <li className=" border-b-2 p-2">ওয়েব মেইল</li>
                   </NavLink>
-                  <NavLink to={`/page/অনলাইনে বেতন দাখিল`}>
+                  <NavLink to={`/লিংক-পেজ/অনলাইনে বেতন দাখিল`}>
                     <li className=" border-b-2 p-2">অনলাইনে বেতন দাখিল</li>
                   </NavLink>
-                  <NavLink to={`/page/আমার সরকার`}>
+                  <NavLink to={`/লিংক-পেজ/আমার সরকার`}>
                     <li className=" border-b-2 p-2">আমার সরকার</li>
                   </NavLink>
                 </ul>
@@ -222,13 +222,13 @@ const Navbar = () => {
                     <div className="ml-1">
                       <p className="text-sm font-semibold">যোগাযোগ</p>
 
-                      <NavLink to={`/page/অফিসের ঠিকানা`}>
+                      <NavLink to={`/লিংক-পেজ/অফিসের ঠিকানা`}>
                         <li className=" border-b-2 p-2">অফিসের ঠিকানা</li>
                       </NavLink>
                     </div>
                     <div>
                       <p className="text-sm font-semibold">মতামত</p>
-                      <NavLink to={`/page/আপনার জিজ্ঞাসা ও মতামত`}>
+                      <NavLink to={`/লিংক-পেজ/আপনার জিজ্ঞাসা ও মতামত`}>
                         <li className=" border-b-2 p-2">
                           আপনার জিজ্ঞাসা ও মতামত
                         </li>
@@ -264,22 +264,22 @@ const Navbar = () => {
                   <div className="ml-1">
                     <p className="text-sm font-semibold">বিভাগ পরিচিতি</p>
 
-                    <NavLink to={`/page/ইতিহাস`}>
+                    <NavLink to={`/লিংক-পেজ/ইতিহাস`}>
                       <li className=" border-b-2 p-2">ইতিহাস</li>
                     </NavLink>
-                    <NavLink to={`/page/মাননীয় উপদেষ্টা`}>
+                    <NavLink to={`/লিংক-পেজ/মাননীয় উপদেষ্টা`}>
                       <li className=" border-b-2 p-2">মাননীয় উপদেষ্টা</li>
                     </NavLink>
-                    <NavLink to={`/page/প্রধান কার্যাবলী`}>
+                    <NavLink to={`/লিংক-পেজ/প্রধান কার্যাবলী`}>
                       <li className=" border-b-2 p-2"> প্রধান কার্যাবলী</li>
                     </NavLink>
                   </div>
                   <div>
                     <p className="text-sm font-semibold">জনবল</p>
-                    <NavLink to={`/page/কর্মকর্তাবৃন্দ`}>
+                    <NavLink to={`/লিংক-পেজ/কর্মকর্তাবৃন্দ`}>
                       <li className=" border-b-2 p-2"> কর্মকর্তাবৃন্দ</li>
                     </NavLink>
-                    <NavLink to={`/page/কর্মবণ্টন`}>
+                    <NavLink to={`/লিংক-পেজ/কর্মবণ্টন`}>
                       <li className=" border-b-2 p-2"> কর্মবণ্টন</li>
                     </NavLink>
                   </div>
@@ -289,7 +289,7 @@ const Navbar = () => {
             <li className="mr-1 relative group">
               <span className="text-center cursor-pointer">অধীনস্থ দপ্তর</span>
               <ul className="bg-base-100 z-20 text-[#213D61] border rounded  p-2 absolute left-0 mt-8 hidden group-hover:block">
-                <NavLink to={`/page/দপ্তর-অফিস-সংস্থার-তালিকা`}>
+                <NavLink to={`/লিংক-পেজ/দপ্তর-অফিস-সংস্থার-তালিকা`}>
                   <li className=" border-b-2 p-2">দপ্তর/অফিস/সংস্থার তালিকা</li>
                 </NavLink>
               </ul>
@@ -303,19 +303,19 @@ const Navbar = () => {
                   <div className="ml-1">
                     <p className="text-sm font-semibold">উন্নয়ন প্রকল্পসমূহ</p>
 
-                    <NavLink to={`/page/চলমান প্রকল্প`}>
+                    <NavLink to={`/লিংক-পেজ/চলমান প্রকল্প`}>
                       <li className=" border-b-2 p-2">চলমান প্রকল্প</li>
                     </NavLink>
-                    <NavLink to={`/page/ক্রয় পরিকল্পনা`}>
+                    <NavLink to={`/লিংক-পেজ/ক্রয় পরিকল্পনা`}>
                       <li className=" border-b-2 p-2">ক্রয় পরিকল্পনা</li>
                     </NavLink>
-                    <NavLink to={`/page/সমাপ্ত প্রকল্পসমূহ`}>
+                    <NavLink to={`/লিংক-পেজ/সমাপ্ত প্রকল্পসমূহ`}>
                       <li className=" border-b-2 p-2"> সমাপ্ত প্রকল্পসমূহ</li>
                     </NavLink>
                   </div>
                   <div>
                     <p className="text-sm font-semibold">কর্মসূচিসমূহ</p>
-                    <NavLink to={`/page/সমাপ্ত কর্মসূচিসমূহ`}>
+                    <NavLink to={`/লিংক-পেজ/সমাপ্ত কর্মসূচিসমূহ`}>
                       <li className=" border-b-2 p-2"> সমাপ্ত কর্মসূচিসমূহ</li>
                     </NavLink>
                   </div>
@@ -325,10 +325,10 @@ const Navbar = () => {
             <li className="mr-1 relative group">
               <span className="text-center cursor-pointer">গ্যালারি</span>
               <ul className="bg-base-100 z-20 text-[#213D61] border rounded  p-2 absolute left-0 mt-8 hidden group-hover:block">
-                <NavLink to={`/page/ফটো গ্যালারি`}>
+                <NavLink to={`/লিংক-পেজ/ফটো গ্যালারি`}>
                   <li className=" border-b-2 p-2"> ফটো গ্যালারি </li>
                 </NavLink>
-                <NavLink to={`/page/ভিডিও গ্যালারি`}>
+                <NavLink to={`/লিংক-পেজ/ভিডিও গ্যালারি`}>
                   <li className=" border-b-2 p-2">ভিডিও গ্যালারি</li>
                 </NavLink>
               </ul>
@@ -336,16 +336,16 @@ const Navbar = () => {
             <li className="mr-1 relative group">
               <span className="text-center cursor-pointer">আইন নীতিমালা</span>
               <ul className="bg-base-100 z-20 text-[#213D61] border rounded  p-2 absolute left-0 mt-8 hidden group-hover:block">
-                <NavLink to={`/page/আইন ও বিধি`}>
+                <NavLink to={`/লিংক-পেজ/আইন ও বিধি`}>
                   <li className=" border-b-2 p-2">আইন ও বিধি</li>
                 </NavLink>
-                <NavLink to={`/page/নীতিমালা`}>
+                <NavLink to={`/লিংক-পেজ/নীতিমালা`}>
                   <li className=" border-b-2 p-2">নীতিমালা</li>
                 </NavLink>
-                <NavLink to={`/page/নির্দেশিকা ও কৌশলপত্র`}>
+                <NavLink to={`/লিংক-পেজ/নির্দেশিকা ও কৌশলপত্র`}>
                   <li className=" border-b-2 p-2">নির্দেশিকা ও কৌশলপত্র</li>
                 </NavLink>
-                <NavLink to={`/page/খসড়া আইন-বিধি এবং নীতিমালা`}>
+                <NavLink to={`/লিংক-পেজ/খসড়া আইন-বিধি এবং নীতিমালা`}>
                   <li className=" border-b-2 p-2">
                     খসড়া আইন, বিধি এবং নীতিমালা
                   </li>
@@ -355,33 +355,33 @@ const Navbar = () => {
             <li className="mr-1 relative group">
               <span className="text-center cursor-pointer"> ই-সেবা</span>
               <ul className="bg-base-100 z-20 text-[#213D61] border rounded  p-2 absolute left-0 mt-8 hidden group-hover:block">
-                <NavLink to={`/page/ইনোভেশন ইনফরমেশন`}>
+                <NavLink to={`/লিংক-পেজ/ইনোভেশন ইনফরমেশন`}>
                   <li className=" border-b-2 p-2">ইনোভেশন ইনফরমেশন</li>
                 </NavLink>
-                <NavLink to={`/page/নৈমিত্তিক ছুটি ব্যবস্থাপনা`}>
+                <NavLink to={`/লিংক-পেজ/নৈমিত্তিক ছুটি ব্যবস্থাপনা`}>
                   <li className=" border-b-2 p-2">
                     নৈমিত্তিক ছুটি ব্যবস্থাপনা
                   </li>
                 </NavLink>
-                <NavLink to={`/page/স্মার্ট ড্যাশবোর্ড`}>
+                <NavLink to={`/লিংক-পেজ/স্মার্ট ড্যাশবোর্ড`}>
                   <li className=" border-b-2 p-2">স্মার্ট ড্যাশবোর্ড</li>
                 </NavLink>
-                <NavLink to={`/page/ফ্রিল্যান্সার আইডি`}>
+                <NavLink to={`/লিংক-পেজ/ফ্রিল্যান্সার আইডি`}>
                   <li className=" border-b-2 p-2">ফ্রিল্যান্সার আইডি</li>
                 </NavLink>
-                <NavLink to={`/page/ফেলোশিপ ও বৃত্তি`}>
+                <NavLink to={`/লিংক-পেজ/ফেলোশিপ ও বৃত্তি`}>
                   <li className=" border-b-2 p-2">ফেলোশিপ ও বৃত্তি</li>
                 </NavLink>
-                <NavLink to={`/page/ই-নথি`}>
+                <NavLink to={`/লিংক-পেজ/ই-নথি`}>
                   <li className=" border-b-2 p-2">ই-নথি</li>
                 </NavLink>
-                <NavLink to={`/page/ওয়েব মেইল`}>
+                <NavLink to={`/লিংক-পেজ/ওয়েব মেইল`}>
                   <li className=" border-b-2 p-2">ওয়েব মেইল</li>
                 </NavLink>
-                <NavLink to={`/page/অনলাইনে বেতন দাখিল`}>
+                <NavLink to={`/লিংক-পেজ/অনলাইনে বেতন দাখিল`}>
                   <li className=" border-b-2 p-2">অনলাইনে বেতন দাখিল</li>
                 </NavLink>
-                <NavLink to={`/page/আমার সরকার`}>
+                <NavLink to={`/লিংক-পেজ/আমার সরকার`}>
                   <li className=" border-b-2 p-2">আমার সরকার</li>
                 </NavLink>
               </ul>
@@ -396,13 +396,13 @@ const Navbar = () => {
                   <div className="ml-1">
                     <p className="text-sm font-semibold">যোগাযোগ</p>
 
-                    <NavLink to={`/page/অফিসের ঠিকানা`}>
+                    <NavLink to={`/লিংক-পেজ/অফিসের ঠিকানা`}>
                       <li className=" border-b-2 p-2">অফিসের ঠিকানা</li>
                     </NavLink>
                   </div>
                   <div>
                     <p className="text-sm font-semibold">মতামত</p>
-                    <NavLink to={`/page/আপনার জিজ্ঞাসা ও মতামত`}>
+                    <NavLink to={`/লিংক-পেজ/আপনার জিজ্ঞাসা ও মতামত`}>
                       <li className=" border-b-2 p-2">
                         আপনার জিজ্ঞাসা ও মতামত
                       </li>
@@ -413,7 +413,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        
       </div>
     </div>
   );

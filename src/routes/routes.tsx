@@ -13,17 +13,16 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element:<LandingPage />
+        element: <LandingPage />,
       },
       {
-       path:'/:id',
-        element:<OurServiceDetails />
+        path: "/:id",
+        element: <OurServiceDetails />,
       },
       {
-       path:'/page/:id',
-        element:<CommonNavLink />
+        path: "/লিংক-পেজ/:id",
+        element: <CommonNavLink />,
       },
-      
     ],
   },
 ]);

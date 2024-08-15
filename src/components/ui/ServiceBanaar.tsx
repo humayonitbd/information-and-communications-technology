@@ -9,7 +9,7 @@ const ServiceBanaar = ({name}:{name:string | undefined}) => {
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-black bg-opacity-50">
-        <h2 className="text-3xl md:text-5xl mb-4 font-bold">
+        <h2 className="text-3xl md:text-3xl mb-4 font-bold">
           {name}
         </h2>
         <p className="text-lg md:text-xl mb-6">

@@ -33,7 +33,7 @@ const NoticeSec = () => {
     {
       id: 4,
       title:
-        "২০২৪-২০২৫ অর্থবছরের বিজ্ঞপ্তি একটি গুরুত্বপূর্ণ নথি যা নতুন অর্থবছরের জন্য পরিকল্পনা, বাজেট, এবং",
+        "e-Tender For “Procurement of Food and Refreshment for Aspire to Innovate (a2i) Program”",
       details:
         "এই e-Tender প্রক্রিয়া প্রোগ্রামের জন্য খাদ্য এবং রিফ্রেশমেন্টের সরবরাহের জন্য ঘোষণা করা হয়েছে। e-Tender প্রক্রিয়ার মাধ্যমে এই প্রোগ্রামের জন্য প্রয়োজনীয় খাদ্যপণ্য এবং পানীয়ের সরবরাহকারী প্রতিষ্ঠানের নির্বাচন করা হবে। এতে অংশগ্রহণকারী প্রার্থীদের একটি নির্দিষ্ট সময়ের মধ্যে তাদের দরপত্র জমা দিতে হবে, যা বিস্তারিতভাবে প্রোগ্রামের চাহিদা ও শর্তাবলী অনুসরণ করে। এই প্রক্রিয়ায় প্রাপ্ত দরপত্রের মূল্যায়ন করা হবে এবং যোগ্য প্রার্থীকে চূড়ান্তভাবে নির্বাচিত করা হবে। এতে নির্বাচিত প্রতিষ্ঠানের সাথে চুক্তি স্বাক্ষরিত হবে, যা খাদ্য এবং পানীয়ের সরবরাহ নিশ্চিত করবে।",
     },
@@ -68,7 +68,7 @@ const NoticeSec = () => {
                 >
                   <li className="flex items-center ">
                     <FaAngleRight className="text-[#00a751f3] text-lg" />
-                    <span className="text-gray-700">
+                    <span className="text-[#213D61]">
                       {notice.details.slice(0, 90)}...
                     </span>
                   </li>
@@ -76,7 +76,7 @@ const NoticeSec = () => {
                     className="underline text-[#00a751f3] "
                     onClick={() => handleSeeMore(notice)}
                   >
-                    see more
+                    view
                   </button>
                 </div>
               ))}

@@ -21,6 +21,7 @@ const GallerySec = () => {
             <div
               key={index}
               className="group relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+              data-aos="fade-up"
             >
               <img
                 src={img}

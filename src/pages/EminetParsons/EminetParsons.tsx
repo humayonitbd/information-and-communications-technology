@@ -2,8 +2,14 @@ import samsulArefin from "../../assets/EminateParsons/sochib.jpg";
 import sahabuddin from "../../assets/EminateParsons/rastopoti.jpeg";
 import Unus from "../../assets/EminateParsons/Dr. Muhammad Yunus (1).jpg.jpg";
 import asifNazrul from "../../assets/EminateParsons/prothomalo-english_2024-08-09_iodygb6r_ad2 asif.webp";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+import {useEffect} from "react"
 
 const EminetParsons = () => {
+ useEffect(() => {
+   AOS.init();
+ }, []);
   const eminentPersons = [
     {
       name: "মোঃ সাহাবুদ্দিন",
@@ -42,6 +48,7 @@ const EminetParsons = () => {
             <div
               key={index}
               className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:scale-105 overflow-hidden"
+              data-aos="fade-right"
             >
               <img
                 src={person.image}

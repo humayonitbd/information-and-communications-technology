@@ -19,7 +19,7 @@ const VideoSec = () => {
   return (
     <div className="py-10 bg-[#fff]  text-white mb-5">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
-        <div className="shadow-xl p-2 rounded-lg">
+        <div className="shadow-xl p-2 rounded-lg" data-aos="fade-right">
           <div
             className="relative h-64 overflow-hidden cursor-pointer"
             onClick={() =>
@@ -36,7 +36,7 @@ const VideoSec = () => {
           </div>
         </div>
 
-        <div className="shadow-xl p-2 rounded-lg">
+        <div className="shadow-xl p-2 rounded-lg" data-aos="fade-up">
           <div
             className="relative h-64  overflow-hidden  cursor-pointer"
             onClick={() =>
@@ -52,7 +52,7 @@ const VideoSec = () => {
             <FaPlay className="absolute inset-0 m-auto text-white text-4xl opacity-80" />
           </div>
         </div>
-        <div className="shadow-xl p-2 rounded-lg">
+        <div className="shadow-xl p-2 rounded-lg" data-aos="fade-left">
           <div
             className="relative h-64  overflow-hidden   cursor-pointer"
             onClick={() =>
