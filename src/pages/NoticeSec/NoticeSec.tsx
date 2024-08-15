@@ -59,7 +59,7 @@ const NoticeSec = () => {
           নোটিশ বোর্ড
         </h2>
         <div className="md:flex justify-start gap-10">
-          <div className="w-2/3">
+          <div className="md:w-2/3">
             <ul className="space-y-3">
               {noticeInfos.map((notice) => (
                 <div
@@ -83,7 +83,7 @@ const NoticeSec = () => {
             </ul>
           </div>
           <div className="flex items-start h-full ">
-            <div className="text-center ml-20">
+            <div className="text-center md:ml-20">
               <div>
                 <img className="h-56 w-56" src={noticeImage} alt="" />
               </div>

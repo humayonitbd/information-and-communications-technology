@@ -1,8 +1,9 @@
-import MainLayout from "../components/layout/MainLayout";
 import { createBrowserRouter } from "react-router-dom";
 import LandingPage from "../pages/LandingPage/LandingPage";
 import App from "../App";
 import OurServiceDetails from "../pages/OurService/OurServiceDetails";
+import CommonNavLink from "../pages/CommonNavLink/CommonNavLink";
+
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
        path:'/:id',
         element:<OurServiceDetails />
+      },
+      {
+       path:'/page/:id',
+        element:<CommonNavLink />
       },
       
     ],
